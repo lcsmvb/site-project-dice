@@ -1,12 +1,15 @@
 /* --- RESET & REGLES DE BASE --- */
 * {
-    box-sizing: border-box; /* Empêche le rembourrage (padding) de casser la largeur */
+    box-sizing: border-box;
+    /* Empêche le rembourrage (padding) de casser la largeur */
 }
 
 body {
     margin: 0 auto;
-    width: 90%;             /* S'adapte à 90% de l'écran sur mobile */
-    max-width: 850px;       /* Bloque à 850px max sur grand écran d'ordinateur */
+    width: 90%;
+    /* S'adapte à 90% de l'écran sur mobile */
+    max-width: 850px;
+    /* Bloque à 850px max sur grand écran d'ordinateur */
     font-family: "Quantico", sans-serif;
     background-color: #000000;
     color: #f9f9fa;
@@ -21,7 +24,8 @@ header {
 }
 
 header h1 {
-    font-size: clamp(1.5rem, 4vw, 2.3rem); /* Taille de titre dynamique qui s'adapte à l'écran */
+    font-size: clamp(1.5rem, 4vw, 2.3rem);
+    /* Taille de titre dynamique qui s'adapte à l'écran */
     margin: 0;
 }
 
@@ -29,7 +33,8 @@ a {
     color: #8e8ee0;
     font-weight: bold;
     text-decoration: none;
-    word-break: break-all; /* Évite que les longs liens dépassent sur petit écran */
+    word-break: break-all;
+    /* Évite que les longs liens dépassent sur petit écran */
 }
 
 a:hover {
@@ -65,7 +70,8 @@ a:hover {
     padding: 4px 14px;
     border-radius: 20px;
     box-shadow: 0 2px 8px rgba(99, 102, 241, 0.4);
-    white-space: nowrap; /* Empêche le badge de se casser en deux lignes */
+    white-space: nowrap;
+    /* Empêche le badge de se casser en deux lignes */
 }
 
 /* Petite pointe sous la bulle */
@@ -98,7 +104,8 @@ a:hover {
 /* Pour les écrans mobiles (< 600px) */
 @media (max-width: 600px) {
     body {
-        width: 95%;          /* On prend plus de place sur petit écran */
+        width: 95%;
+        /* On prend plus de place sur petit écran */
         padding-left: 8px;
         padding-right: 8px;
     }
@@ -108,13 +115,16 @@ a:hover {
     }
 
     .card {
-        padding: 22px 14px 14px 14px; /* Un peu moins de padding pour gagner de l'espace */
+        padding: 22px 14px 14px 14px;
+        /* Un peu moins de padding pour gagner de l'espace */
         margin-top: 30px;
     }
 
     .card .badge {
-        left: 12px;           /* On décale légèrement le badge vers la gauche */
-        font-size: 0.75rem;   /* Bulle un peu plus petite sur mobile */
+        left: 12px;
+        /* On décale légèrement le badge vers la gauche */
+        font-size: 0.75rem;
+        /* Bulle un peu plus petite sur mobile */
         padding: 3px 10px;
     }
 
