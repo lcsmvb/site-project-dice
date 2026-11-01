@@ -132,3 +132,12 @@ a:hover {
         font-size: 1.1rem;
     }
 }
+/* --- IMAGES DANS LES CARDS --- */
+.card img {
+    display: block;
+    max-width: 100%;   /* ne dépasse jamais la card */
+    height: auto;      /* garde les proportions */
+    margin: 12px auto auto;  /* auto à gauche et à droite = centrée */
+    border-radius: 8px;
+    image-rendering: pixelated;
+}
